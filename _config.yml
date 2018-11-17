@@ -23,9 +23,9 @@ description: Blogging about everything neuroimaging and deep learning
 
 # List of links in the navigation bar
 navbar-links:
-  About Me:
+  About Me: "aboutme"
   Resources:
-    #- Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
+    - Papers:
     #- Learn markdown: "http://www.markdowntutorial.com/"
     #- GitHub Pages: "https://pages.github.com/"
   #Author's home: "http://deanattali.com"
