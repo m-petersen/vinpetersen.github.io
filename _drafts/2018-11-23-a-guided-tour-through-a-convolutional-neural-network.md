@@ -1,7 +1,7 @@
 ---
 layout: post
 published: false
-title: A Guided Tour Through a Convolutional Neural Network
+title: A Guided Tour Through a Convolutional Neural Network - Part 3
 ---
 ### Backpropagation and Gradient Descent
 
