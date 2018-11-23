@@ -7,9 +7,9 @@ date: '2018-11-23'
 ---
 ### Introduction
 
-This series of posts aims to introduce to the topic of convolutional neural networks (CNN). By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject. 
+This series of posts aims to introduce to the topic of convolutional neural networks (CNN) in a comprehensive and concise manner. By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject.
 
-My inspiration to put the things I've learned about CNN into this format comes from the Fast.ai course 'Practical Deep Learning For Coders v3', which I'm currently attending, where the instructor Jeremy Howard encouraged us to blog about the things we have learned. The knowledge I'm sharing here comes from reading various materials and attending different courses for the purpose of writing a thesis in a student research project. A major part of these posts is taken from this thesis I finished recently.
+My inspiration to put the things I've learned about CNN into this format comes from the Fast.ai course 'Practical Deep Learning For Coders v3', which I'm currently attending, where the instructor Jeremy Howard encouraged us to blog about the things we have learned. The knowledge I'm sharing here comes from reading various materials and attending different courses for the purpose of writing a thesis in a student research project with a medical imaging focus. A major part of these posts is taken from this thesis I finished recently.
 
 Before the journey begins, some precautions have to be taken to put convolutional neural networks (CNN) in perspective. Machine learning (ML) is the subfield of computer science addressing problems through algorithms with learning capabilities. The ‘learning’ happens via autonomous optimisation of internal components, called parameters. Problems suitable for ML are two forms of predictions: regression – the prediction of continuous values – and classification – the subdivision of objects into distinct groups by class membership prediction.
 
@@ -22,7 +22,7 @@ Deep learning (DL) in turn is a subfield of ML, distinguished by applying algori
 
 The tour through the network follows an exemplary network illustrated in *Figure 1*. It is inspired by LeNet, (LeCun et al., 1998) the first CNN architecture. While the specific architecture differs between CNN, they are characterised by stereotypical elements covered by this example network. The algorithm is designed to solve a binary classification problem such as the distinction between cats and dogs.
 
-At this point, it is important to mention, that the figure and the immediately following paragraphs serve to create a frame for the walkthrough. 
+At this point, it is important to mention, that the figure and the immediately following paragraphs serve to create a frame for the walkthrough. While a deeper understanding will gradually be developed in the coming parts, *Fig. 1* will serve as a reference to facilitate orientation for the reader. Hence I want you to endure some minutes 
 
 -----Which means each computation succesively applied to the data mentioned here will be discussed more in-depth later This frame shall serve as a reference  Therefore, all the terms mentioned will be explained in greater detail later and the reader is encouraged to endure some questions.-----
 
@@ -72,5 +72,4 @@ BRAIN CONTRAST FEATURE MAP
 * Neural Networks and Deep Learning by Andrew Ng and deeplearning.ai: https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning
 * LeCun, Y., Bottou, L., Bengio, Y., Haffner, P., 1998. Gradient-Based Learning Applied to Document Recognition.
 * Zeiler, M.D., Fergus, R., 2014. Visualizing and Understanding Convolutional Networks
-* A very good post about the content discussed is made by [Ujjwal Karn](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/). He provides multiple animations for better comprehension. Also, it can be very helpful to hear another explanation of the same topic. 
-
+* A very good post about the content discussed is made by [Ujjwal Karn](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/). He provides multiple animations for better comprehension. Also, it can be very helpful to hear another explanation of the same topic.
