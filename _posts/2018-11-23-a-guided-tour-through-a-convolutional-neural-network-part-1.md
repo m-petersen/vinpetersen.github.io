@@ -60,9 +60,13 @@ The thresholded feature maps are handed over to a max pooling layer (*Fig. 6*). 
 
 This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I'd be grateful.
 
+BRAIN CONTRAST FEATURE MAP
+
 ### Inspiration and references
 
 * Deep Learning For Coders by Jeremy Howard and Fast.ai: https://course.fast.ai/
 * Neural Networks and Deep Learning by Andrew Ng and deeplearning.ai: https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning
 * LeCun, Y., Bottou, L., Bengio, Y., Haffner, P., 1998. Gradient-Based Learning Applied to Document Recognition.
 * Zeiler, M.D., Fergus, R., 2014. Visualizing and Understanding Convolutional Networks
+* A very good post about the content discussed is made by [Ujjwal Karn](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/). He provides multiple animations for better comprehension. Also, it can be very helpful to hear another explanation of the same topic. 
+
