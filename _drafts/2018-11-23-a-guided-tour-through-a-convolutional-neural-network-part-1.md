@@ -7,6 +7,10 @@ title: A Guided Tour Through a Convolutional Neural Network - Part 1
 
 This series of posts wants to introduce in the topic of convolutional neural networks (CNN). By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject. My inspiration to put the things I've learned about CNN into this format is drawn from the Fastai live course I am currently attending. The knowledge I'm sharing here comes mostly from reading various materials and attending different courses for the purpose of writing a thesis in a student research project. A major part of these posts is taken from this thesis I finished recently.
 
+Before the journey begins, some precautions have to be taken to put convolutional neural networks (CNN) in perspective. Machine learning (ML) is the subfield of computer science addressing problems through algorithms with learning capabilities. The ‘learning’ happens via autonomous optimisation of internal components, called parameters. Problems suitable for ML are two forms of predictions: regression – the prediction of continuous values – and classification – the subdivision of objects into distinct groups by class membership prediction.
+
+Deep learning (DL) in turn is a subfield of ML, distinguished by applying algorithms with a specific architecture, called neural networks, to machine learning problems. This architecture is inspired by neural networks in nature and consists – somewhat simplified – of neurons representing computational units and edges connecting different neurons as well as ensuring the flow of information. There are different types of neural networks: artificial neural networks (ANN), specialised on working with tabular data; recurrent neural networks (RNN) for time-series data like speech and convolutional neural networks (CNN), especially applicable to image data.
+
 ### The anatomy of a CNN
 
 ![Figure 1. Example net]({{site.baseurl}}/img/example_net.tif)
