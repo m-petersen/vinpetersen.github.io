@@ -41,28 +41,31 @@ The term ‘convolution’ describes a specific type of matrix calculation where
 How exactly the filter moves over the image is determined by stride and padding. A stride of one describes moving the filter by one pixel per convolution operation resulting in a smaller feature map (*Fig. 2*: stride s = 1). The size reduction of the feature map can be counteracted by adding zero pixels to the outer boundary of the image, called padding (*Fig. 2*: padding = 0). During a convolution operation, mostly multiple individual filters are applied to the input image, resulting in a feature map for each filter (*Fig. 2*: multiple silhouttes behind filter and feature map). In other words, a convolutional layer outputs a stack of feature maps corresponding to its filter count.
 
 ![convolution_.png]({{site.baseurl}}/img/convolution_.png)
-*Figure 23 Convolution operation*
+*Figure 3. Convolution operation*
 
-A filter can be considered as a specialised contour detector, and the resulting feature map reports detection locations. If a filter is placed on an image subpart containing an edge – defined by a considerable intensity contrast between adjacent values – it is specialised for, it will translate its finding into a high value in the feature map. In other words, a high feature map value signifies a contour detection in the input image at the specific location. The process is illustrated in *Figure 3*: if the filter reaches the subparts marked by the yellow and green frame it identifies the underlying contour. Consequently, feature maps can be seen as images as well and visualised accordingly.
+A filter can be considered as a specialised contour detector, and the resulting feature map reports detection locations. If a filter is placed on an image subpart containing an edge – defined by a considerable intensity contrast between adjacent values – it is specialised for, it will translate its finding into a high value in the feature map. In other words, a high feature map value signifies a contour detection in the input image at the specific location. The process is illustrated in *Figure 3*: if the filter reaches the subparts marked by the yellow and green frame it identifies the underlying contour. Consequently, feature maps can be seen as images as well and visualised accordingly. 
+
+![convolution_3.png]({{site.baseurl}}/img/convolution_3.png)
+*Figure 4. Convolution operation. Exemplary results*
+
+Figure 4 shows the results of applying filters for vertical or horizontal edge detection to an input image. 
 
 ![zf.png]({{site.baseurl}}/img/zf.png)
-*Figure 4. Filters after learning; from Zeiler and Fergus, 2014*
+*Figure 5. Filters after learning; from Zeiler and Fergus, 2014*
 
-Filter values are weights and thus among the parameters that are learned. They are continuously optimised during the backward pass while further data passes through the network. By that an adjustment process is achieved: the filters are learning to recognise specific elements available in the input images and can be visualised as pictures themselves. Whereas filters in earlier layers (*Fig. 4*: left) will learn basal picture elements like contours, filters in later layers (*Figure 4*: right) will join upstream features and by that learn more complex constructs like for example eyes or even faces (Zeiler and Fergus, 2014). Thus, filters can be cautiously compared with receptive fields of visual cortex neurons.
+Filter values are weights and thus among the parameters that are learned. They are continuously optimised during the backward pass while further data passes through the network. By that an adjustment process is achieved: the filters are learning to recognise specific elements available in the input images and can be visualised as pictures themselves. Whereas filters in earlier layers (*Fig. 5*: left) will learn basal picture elements like contours, filters in later layers (*Fig. 5*: right) will join upstream features and by that learn more complex constructs like for example eyes or even faces (Zeiler and Fergus, 2014). Thus, filters can be cautiously compared with receptive fields of visual cortex neurons.
 
 ![relu.png]({{site.baseurl}}/img/relu.png)
-*Figure 5. Rectified linear unit (ReLU)*
+*Figure 6. Rectified linear unit (ReLU)*
 
-A function called rectified linear unit (ReLU) is applied to the output feature maps (*Fig. 5*). Under the intimidating name hides a simple thresholding step: all values below zero are zeroed.
+A function called rectified linear unit (ReLU) is applied to the output feature maps (*Fig. 6*). Under the intimidating name hides a simple thresholding step: all values below zero are zeroed.
 
 ![maxpool.png]({{site.baseurl}}/img/maxpool.png)
-*Figure 6. Max Pooling*
+*Figure 7. Max Pooling*
 
-The thresholded feature maps are handed over to a max pooling layer (*Fig. 6*). Here, a simpler type of matrix calculation happens, though similar to convolution. A filter is placed on feature map subsets, again in sliding-window fashion, and extracts the highest value of the subsets, keeping them in a condensed output feature map. The purpose is dropping superfluous data: values not signifying any contour detection are crossed-out, whereas the spatial information is roughly kept. This results in lower computation costs.
+The thresholded feature maps are handed over to a max pooling layer (*Fig. 7*). Here, a simpler type of matrix calculation happens, though similar to convolution. A filter is placed on feature map subsets, again in sliding-window fashion, and extracts the highest value of the subsets, keeping them in a condensed output feature map. The purpose is dropping superfluous data: values not signifying any contour detection are crossed-out, whereas the spatial information is roughly kept. This results in lower computation costs.
 
 This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I'd be grateful.
-
-BRAIN CONTRAST FEATURE MAP
 
 ### Inspiration and references
 
@@ -70,4 +73,4 @@ BRAIN CONTRAST FEATURE MAP
 * Neural Networks and Deep Learning by Andrew Ng and deeplearning.ai: https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning
 * LeCun, Y., Bottou, L., Bengio, Y., Haffner, P., 1998. Gradient-Based Learning Applied to Document Recognition.
 * Zeiler, M.D., Fergus, R., 2014. Visualizing and Understanding Convolutional Networks
-* A very good post about the content discussed is made by [Ujjwal Karn](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/). He provides multiple animations for better comprehension. Also, it can be very helpful to hear another explanation of the same topic.
+* [Ujjwal Karn](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) provides multiple animations for better comprehension of the issues discussed.
