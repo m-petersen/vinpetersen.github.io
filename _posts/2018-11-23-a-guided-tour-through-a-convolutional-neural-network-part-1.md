@@ -7,7 +7,9 @@ date: '2018-11-23'
 ---
 ### Introduction
 
-This series of posts aims to introduce the reader to the topic of convolutional neural networks (CNN). By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject. My inspiration to put the things I've learned about CNN into this format comes from the Fast.ai course 'Practical Deep Learning For Coders v3' I'm attending right now, where the instructor Jeremy Howard encouraged us to blog about the things we have learned. The knowledge I'm sharing here comes from reading various materials and attending different courses for the purpose of writing a thesis in a student research project. A major part of these posts is taken from this thesis I finished recently.
+This series of posts aims to introduce the reader to the topic of convolutional neural networks (CNN). By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject. 
+
+My inspiration to put the things I've learned about CNN into this format comes from the Fast.ai course 'Practical Deep Learning For Coders v3' I'm attending right now, where the instructor Jeremy Howard encouraged us to blog about the things we have learned. The knowledge I'm sharing here comes from reading various materials and attending different courses for the purpose of writing a thesis in a student research project. A major part of these posts is taken from this thesis I finished recently.
 
 Before the journey begins, some precautions have to be taken to put convolutional neural networks (CNN) in perspective. Machine learning (ML) is the subfield of computer science addressing problems through algorithms with learning capabilities. The ‘learning’ happens via autonomous optimisation of internal components, called parameters. Problems suitable for ML are two forms of predictions: regression – the prediction of continuous values – and classification – the subdivision of objects into distinct groups by class membership prediction.
 
@@ -46,11 +48,17 @@ A filter can be considered as a specialised contour detector, and the resulting 
 
 Filter values are weights and thus among the parameters that are learned. They are continuously optimised during the backward pass while further data passes through the network. By that an adjustment process is achieved: the filters are learning to recognise specific elements available in the input images and can be visualised as pictures themselves. Whereas filters in earlier layers (*Figure 3*: left) will learn basal picture elements like contours, filters in later layers (*Figure 3*: right) will join upstream features and by that learn more complex constructs like for example eyes or even faces (Zeiler and Fergus, 2014). Thus, filters can be cautiously compared with receptive fields of visual cortex neurons.
 
+![relu.png]({{site.baseurl}}/img/relu.png)
+*Figure 5. Rectified linear unit (ReLU)*
+
 A function called rectified linear unit (ReLU) is applied to the output feature maps. Under the intimidating name hides a simple thresholding step: all values below zero are zeroed.
+
+![maxpool.png]({{site.baseurl}}/img/maxpool.png)
+*Figure 6. Max Pooling*
 
 The thresholded feature maps are handed over to a max pooling layer. Here, a simpler type of matrix calculation happens, though similar to convolution. A filter is placed on feature map subsets, again in sliding-window fashion, and extracts the highest value of the subsets, keeping them in a condensed output feature map. The purpose is dropping superfluous data: values not signifying any contour detection are crossed-out, whereas the spatial information is roughly kept. This results in lower computation costs.
 
-This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I'd be grateful. Comments are also welcome.
+This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I'd be grateful.
 
 ### Inspiration and references
 
