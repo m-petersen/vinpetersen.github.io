@@ -20,7 +20,7 @@ Deep learning (DL) in turn is a subfield of ML, distinguished by applying algori
 ![example_net.png]({{site.baseurl}}/img/example_net.png)
 *Figure 1. Example net*
 
-The tour through the network follows an exemplary network illustrated in *Figure 1*. It is inspired by LeNet, (LeCun et al., 1998) the first CNN architecture. While the specific architecture differs between CNN, they are characterised by stereotypical elements covered by this example network. The algorithm is designed to solve a binary classification problem such as the distinction between cats and dogs.
+The tour through the network follows an exemplary network illustrated in *Figure 1* It is inspired by LeNet, (LeCun et al., 1998) the first CNN architecture. While the specific architecture differs between CNN, they are characterised by stereotypical elements covered by this example network. The algorithm is designed to solve a binary classification problem such as the distinction between cats and dogs.
 
 At this point, it is important to mention, that the figure and the immediately following paragraphs serve to create a frame for the walkthrough. A complete understanding and familiarity with all terms is therefore not yet necessary. Such deeper understanding will gradually be developed in the forthcoming parts, *Fig. 1* will serve as a reference to facilitate orientation for the reader.
 
@@ -43,12 +43,12 @@ How exactly the filter moves over the image is determined by stride and padding.
 ![convolution_.png]({{site.baseurl}}/img/convolution_.png)
 *Figure 3. Convolution operation*
 
-A filter can be considered as a specialised contour detector, and the resulting feature map reports detection locations. If a filter is placed on an image subpart containing an edge – defined by a considerable intensity contrast between adjacent values – it is specialised for, it will translate its finding into a high value in the feature map. In other words, a high feature map value signifies a contour detection in the input image at the specific location. The process is illustrated in *Figure 3*: if the filter reaches the subparts marked by the yellow and green frame it identifies the underlying contour. Consequently, feature maps can be seen as images as well and visualised accordingly. 
+A filter can be considered as a specialised contour detector, and the resulting feature map reports detection locations. If a filter is placed on an image subpart containing an edge – defined by a considerable intensity contrast between adjacent values – it is specialised for, it will translate its finding into a high value in the feature map. In other words, a high feature map value signifies a contour detection in the input image at the specific location. The process is illustrated in *Fig. 3*: if the filter reaches the subparts marked by the yellow and green frame it identifies the underlying contour. Consequently, feature maps can be seen as images as well and visualised accordingly. 
 
 ![convolution_3.png]({{site.baseurl}}/img/convolution_3.png)
 *Figure 4. Convolution operation. Exemplary results*
 
-Figure 4 shows the results of applying filters for vertical or horizontal edge detection to an input image. 
+*Fig. 4* shows the results of applying filters (*Fig. 4*: bottom row) for vertical or horizontal edge detection to an input image. 
 
 ![zf.png]({{site.baseurl}}/img/zf.png)
 *Figure 5. Filters after learning; from Zeiler and Fergus, 2014*
@@ -65,7 +65,7 @@ A function called rectified linear unit (ReLU) is applied to the output feature 
 
 The thresholded feature maps are handed over to a max pooling layer (*Fig. 7*). Here, a simpler type of matrix calculation happens, though similar to convolution. A filter is placed on feature map subsets, again in sliding-window fashion, and extracts the highest value of the subsets, keeping them in a condensed output feature map. The purpose is dropping superfluous data: values not signifying any contour detection are crossed-out, whereas the spatial information is roughly kept. This results in lower computation costs.
 
-This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I'd be grateful.
+This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I would be grateful.
 
 ### Inspiration and references
 
