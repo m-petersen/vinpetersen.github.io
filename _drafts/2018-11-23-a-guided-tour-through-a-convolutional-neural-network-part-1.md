@@ -7,7 +7,7 @@ date: '2018-11-23'
 ---
 ### Introduction
 
-This series of posts aims to introduce the reader to the topic of convolutional neural networks (CNN). By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject.
+This series of posts aims to introduce to the topic of convolutional neural networks (CNN). By following the path of data flowing through the network in an illustrative manner, the goal is to establish an intuitive understanding of the inner workings of these algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject.
 
 My inspiration to put the things I've learned about CNN into this format comes from the Fast.ai course 'Practical Deep Learning For Coders v3' which I'm attending right now, where the instructor Jeremy Howard encouraged us to blog about the things we have learned. The knowledge I'm sharing here comes from reading various materials and attending different courses for the purpose of writing a thesis in a student research project. A major part of these posts is taken from this thesis I finished recently. References and people I have learned from are credited at the end of each part.
 
@@ -58,7 +58,7 @@ A function called rectified linear unit (ReLU) is applied to the output feature 
 
 The thresholded feature maps are handed over to a max pooling layer (*Fig. 6*). Here, a simpler type of matrix calculation happens, though similar to convolution. A filter is placed on feature map subsets, again in sliding-window fashion, and extracts the highest value of the subsets, keeping them in a condensed output feature map. The purpose is dropping superfluous data: values not signifying any contour detection are crossed-out, whereas the spatial information is roughly kept. This results in lower computation costs.
 
-This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I'd be grateful. Comments are also welcome.
+This concludes part 1 of the series and thereby the first section of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked what you saw, consider sharing. I would be grateful.
 
 ### Inspiration and references
 
