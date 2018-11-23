@@ -1,7 +1,8 @@
 ---
 layout: post
-published: false
+published: true
 title: A Guided Tour Through a Convolutional Neural Network - Part 1
+subtitle: 'Introduction, Convolution and Pooling'
 ---
 ### Introduction
 
