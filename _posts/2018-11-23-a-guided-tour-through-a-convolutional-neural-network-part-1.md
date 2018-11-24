@@ -20,7 +20,7 @@ Deep learning (DL) in turn is a subfield of ML, distinguished by applying algori
 ![example_net.png]({{site.baseurl}}/img/example_net.png)
 *Figure 1. Example net*
 
-The tour through the network follows an exemplary network illustrated in *Figure 1* It is inspired by LeNet, (LeCun et al., 1998) the first CNN architecture. While the specific architecture differs between CNN, they are characterised by stereotypical elements covered by this example network. The algorithm is designed to solve a binary classification problem such as the distinction between cats and dogs.
+The tour through the network follows an exemplary network illustrated in *Figure 1*. It is inspired by LeNet, (LeCun et al., 1998) the first CNN architecture. While the specific architecture differs between CNN, they are characterised by stereotypical elements covered by this example network. The algorithm is designed to solve a binary classification problem such as the distinction between cats and dogs.
 
 At this point, it is important to mention, that the figure and the immediately following paragraphs serve to create a frame for the walkthrough. A complete understanding and familiarity with all terms is therefore not yet necessary. Such deeper understanding will gradually be developed in the forthcoming parts, *Fig. 1* will serve as a reference to facilitate orientation for the reader.
 
