@@ -7,7 +7,7 @@ date: '2018-11-23'
 ---
 ### Introduction
 
-This series of posts aims to introduce to the topic of convolutional neural networks (CNN) in a comprehensive and concise manner. By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of those algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject.
+This series of posts aims to introduce to the topic of convolutional neural networks (CNN) in a comprehensive and concise manner. By following the path of data flowing through the network, the goal is to establish an intuitive understanding of the inner workings of these algorithms. Thereby, this work is meant to be especially valuable for readers from a non-mathematical, non-computer-science background just starting out on the subject.
 
 My inspiration to put the things I've learned about CNN into this format comes from the Fast.ai course 'Practical Deep Learning For Coders v3', which I'm currently attending, where the instructor Jeremy Howard encouraged us to blog about the things we have learned. The knowledge I'm sharing here comes from reading various materials and attending different courses for the purpose of writing a thesis in a student research project with a medical imaging focus. A major part of these posts is taken from this thesis I finished recently.
 
