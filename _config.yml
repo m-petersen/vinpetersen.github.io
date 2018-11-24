@@ -107,7 +107,7 @@ url-pretty: "vinpetersen.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 #gtag: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-129369379-1"
+#google_analytics: "UA-129369379-1"
 
 # Google Tag Manager ID
 #gtm: ""
