@@ -46,5 +46,3 @@ Finally, it should be mentioned, that operating on non-training data is nothing 
 The final part of the series will take a deeper look into backpropagation in general and in the special case of convolutional layers.
 
 ### References and Inspiration
-
-
