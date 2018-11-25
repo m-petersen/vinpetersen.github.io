@@ -12,15 +12,15 @@ The loss function quantifies the goodness of prediction by comparing predicted a
 
 $$C_{n}(a^{true},a^{pred})=-\sum_{class} a_{class}^{true}log(a_{class}^{pred})$$
 
-Let the vector $\boldsymbol{a^{(2)}}$ which encompasses the prediction scores of the model be  $$\boldsymbol{a^{pred}}$$.  $$\boldsymbol{a^{true}}$$ contains the true labels for every prediction, i.e. 1 for the true class, 0 otherwise. For every class, the true label is multiplied by the logarithm of the prediction. In fact, only the prediction score for the true class contributes to the overall loss result, since every other one is multiplied by zero. The product is negativised, resulting in a score that indicates a good agreement of predicted and true label through a low value. By this, an aim for the learning process is identified: lowering the loss function result. Since this whole procedure requires the predictions to be between 0 and 1, they are normalised beforehand.
+Let the vector $\boldsymbol{a^{(2)}}$ which encompasses the prediction scores of the model be $$\boldsymbol{a^{pred}}$$.  $$\boldsymbol{a^{true}}$$ contains the true labels for every prediction, i.e. 1 for the true class, 0 otherwise. For every class, the true label is multiplied by the logarithm of the prediction. In fact, only the prediction score for the true class contributes to the overall loss result, since every other one is multiplied by zero. The product is negativised, resulting in a score that indicates a good agreement of predicted and true label through a low value. By this, an aim for the learning process is identified: lowering the loss function result. Since this whole procedure requires the predictions to be between 0 and 1, they are normalised beforehand.
 
 
 ### Backpropagation and Gradient Descent
 
 ![deriv.png]({{site.baseurl}}/img/deriv.png)
-*Figure 6. Derivatives*
+*Figure 10. Derivatives*
 
-Like every other mathematical function, the cross-entropy loss function can be visualised in coordinate space (Figure 6). The cross-entropy result 𝐶 is shown on the ordinate. It is a nonlinear function and as discussed in the last chapter its course depends on the model’s prediction value for the true class – C(a^pred).
+Like every other mathematical function, the cross-entropy loss function can be visualised in coordinate space (*Figure 10*). The cross-entropy result $$𝐶$$ is shown on the ordinate. It is a nonlinear function and as discussed in the last chapter its course depends on the model’s prediction value for the true class – $$C(a^{pred})$$.
 
 Obviously, a minimum is available, defining the value of 𝐶 to reach via learning the model parameters. Backpropagation and gradient descent are the processes that achieve this descent resulting in an optimisation of the prediction results. How is explained using the fully-connected layer as an example in an iconic and simplified manner.
 
