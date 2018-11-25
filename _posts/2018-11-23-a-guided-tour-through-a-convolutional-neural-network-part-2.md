@@ -26,11 +26,15 @@ The close-up of the single neuron $$a_2^{(1)}$$ is depicted in Figure 9. The inp
 
 An elementwise vector multiplication with a subsequent sum over all products is applied. In other words, every input value is multiplied by its assigned weight and subsequently, all products are summed to achieve a scalar. This scalar is summed with another scalar parameter, bias b. Finally, the sum is provided to an activation function. While in the output layer it typically is a sigmoid function, here it is another ReLU. Thus, the subzero values are zeroed. The result $$a_2^{(1)}$$, the so-called activation, is the output of the neuron and at the same time the symbol it is referenced by. Consequently, the layer $$\boldsymbol{a^{(1)}}$$ consists of the outputs it yields collected in a vector and so it is referenced as a vector.
 
-Overall, this computational integration procedure applies to every non-input neuron of the FC layer. Once all the data went through the FC layer, the outputs of the output layer neurons represent interpretable scores for the prediction. The network predicts the class with the highest score value. This finalises the forward pass.
+Overall, this computational integration procedure applies to every non-input neuron of the FC layer. Once all the data of an image went through the FC layer, the outputs of the output layer neurons represent interpretable scores for the prediction. The network predicts the class with the highest score value. 
 
-As mentioned before, the FC layer identifies patterns in the input vector which are characteristic for a specific class. In the learning process weights and biases adapt for this task. The goal is to weight the values in a way that increases the prediction score of the true class. This requires a comparison of prediction and true label. How this is achieved will be the subject of the next chapter.
+Typically, to let the network output probabilities for each class to predict, a subsequent softmax function is used.
 
-Part 2 ends here. If you liked what you have seen, I would be happy if you share this post. The next chapter will cover the how networks learn their parameter: during the backward pass 
+$$ S(a_{i}^{L}) = \frac{e^{a_{i}^{L}}{\sum_{i}^{classes} a_{i}^{L}}$$
+
+This finalises the forward pass.
+
+As mentioned before, the FC layer identifies patterns in the input vector which are characteristic for a specific class. In the learning process weights and biases adapt for this task. The goal is to weight the values in a way that increases the prediction score of the true class. This requires a comparison of prediction and true label. How this is achieved will be the subject of the next part.
 
 ### Inspiration and References
 * [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly available in early 2019)
