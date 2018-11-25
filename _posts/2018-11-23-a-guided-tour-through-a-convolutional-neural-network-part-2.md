@@ -33,7 +33,7 @@ As mentioned before, the FC layer identifies patterns in the input vector which 
 Part 2 ends here. If you liked what you have seen, I would be happy if you share this post. The next chapter will cover the how networks learn their parameter: during the backward pass 
 
 ### Inspiration and References
-* [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be openly accessible in early 2019)
+* [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly accessible in early 2019)
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html) by Michael Nielsen
 
