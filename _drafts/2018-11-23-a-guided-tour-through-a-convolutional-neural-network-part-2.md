@@ -2,6 +2,7 @@
 layout: post
 published: false
 title: A Guided Tour Through a Convolutional Neural Network - Part 2
+mathjax: true
 ---
 ### Flattening, the Fully-connected Layer and the Single Neuron
 
