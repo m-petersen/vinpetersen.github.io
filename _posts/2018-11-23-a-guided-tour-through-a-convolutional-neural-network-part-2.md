@@ -6,7 +6,7 @@ mathjax: true
 math: true
 ---
 ### Flattening, the Fully-connected Layer and the Single Neuron
-\usepackage{lmodern}
+
 As mentioned in part 1 of the series, there are multiple subtypes of neural networks besides CNN. As one of those subtypes, artificial neural networks (ANN) find widespread application in prediction based on tabular data. Their architecture is also harnessed in the fully-connected (FC) layers of CNN, which forms the final section of the forward pass and results in a prediction.
 
 ![neurons_hd.png]({{site.baseurl}}/img/neurons_hd.png)
@@ -26,5 +26,10 @@ An elementwise vector multiplication with a subsequent sum over all products is 
 Overall, this computational integration procedure applies to every non-input neuron of the FC layer. Once all the data went through the FC layer, the outputs of the output layer neurons represent interpretable scores for the prediction. The network predicts the class with the highest score value. This finalises the forward pass.
 
 As mentioned before, the FC layer identifies patterns in the input vector which are characteristic for a specific class. In the learning process weights and biases adapt for this task. The goal is to weight the values in a way that increases the prediction score of the true class. This requires a comparison of prediction and true label. How this is achieved will be the subject of the next chapter.
+
+Part 2 ends here. If you liked what you have seen, I would be happy if you share this post.
+
+References
+
 
 
