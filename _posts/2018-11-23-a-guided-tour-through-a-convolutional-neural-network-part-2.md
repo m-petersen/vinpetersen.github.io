@@ -30,6 +30,10 @@ Overall, this computational integration procedure applies to every non-input neu
 
 As mentioned before, the FC layer identifies patterns in the input vector which are characteristic for a specific class. In the learning process weights and biases adapt for this task. The goal is to weight the values in a way that increases the prediction score of the true class. This requires a comparison of prediction and true label. How this is achieved will be the subject of the next chapter.
 
-Part 2 ends here. If you liked what you have seen, I would be happy if you share this post.
+Part 2 ends here. If you liked what you have seen, I would be happy if you share this post. The next chapter will cover the how networks learn their parameter: during the backward pass 
 
-### References
+### Inspiration and References
+* [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be openly accessible in early 2019)
+* [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
+* [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html) by Michael Nielsen
+
