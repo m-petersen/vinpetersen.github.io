@@ -5,8 +5,6 @@ title: A Guided Tour Through a Convolutional Neural Network - Part 3
 ---
 ### Backpropagation and Gradient Descent
 
-<img src="https://github.com/vinpetersen/vinpetersen.github.io/tree/master/img/deriv.png" width="200" height="200" />
-
 #![deriv.png]({{site.baseurl}}/img/deriv.png)
 *Figure 6. Derivatives*
 
