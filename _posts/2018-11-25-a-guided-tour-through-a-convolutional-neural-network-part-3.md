@@ -1,6 +1,6 @@
 ---
 layout: post
-published: true
+published: false
 title: A Guided Tour Through a Convolutional Neural Network - Part 3
 mathjax: true
 math: true
