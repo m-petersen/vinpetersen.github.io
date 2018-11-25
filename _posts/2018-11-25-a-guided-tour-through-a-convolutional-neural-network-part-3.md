@@ -19,9 +19,9 @@ Let the vector $\boldsymbol{a^{(2)}}$ which encompasses the prediction scores of
 
 ![deriv.png]({{site.baseurl}}/img/deriv.png)
 
-*Figure 10. Derivatives*
+*Figure 11. Derivatives*
 
-Like every other mathematical function, the cross-entropy loss function can be visualised in coordinate space (*Figure 10*). The cross-entropy result $$𝐶$$ is shown on the ordinate. It is a nonlinear function and as discussed in the last chapter its course depends on the model’s prediction value for the true class – $$C(a^{pred})$$.
+Like every other mathematical function, the cross-entropy loss function can be visualised in coordinate space (*Figure 11*). The cross-entropy result $$𝐶$$ is shown on the ordinate. It is a nonlinear function and as discussed in the last chapter its course depends on the model’s prediction value for the true class – $$C(a^{pred})$$.
 
 Obviously, a minimum is available, defining the value of $$𝐶$$ to reach via learning the model parameters. Backpropagation and gradient descent are the processes that achieve this descent resulting in an optimisation of the prediction results. How is explained using the fully-connected layer as an example in an iconic and simplified manner.
 
@@ -30,7 +30,7 @@ Before discussing both, some preliminaries considering the mathematical backgrou
 ![backprop.png]({{site.baseurl}}/img/backprop.png)
 *Figure 7. Backpropagation*
 
-It is achieved by application of the chain rule, which will be subject of the next part. Now, it is not necessary for understanding the next paragraphs. Since the calculation of this specific derivative contains backward steps through the network parts connecting w_1,2^((2)) and 𝐶, it is called backpropagation (Figure 7). Having ∂C/(〖∂w〗_1,2^((2)) ) allows to draw the graph C(w_1,2^((2))). The reverse conclusion is, at every point of the graph a gradient is defined indicating the direction to move w_1,2^((2))  to minimise 𝐶.
+It is achieved by application of the chain rule, which will be subject of the next part. Now, it is not necessary for understanding the next paragraphs. Since the calculation of this specific derivative contains backward steps through the network parts connecting $$w_{1,2}^{(2)}$$ and $$𝐶$$, it is called backpropagation (Figure 7). Having $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ allows to draw the graph $$C(w_{1,2}^{(2)}$$. The reverse conclusion is, at every point of the graph a gradient is defined indicating the direction to move $$w_{1,2}^{(2)}$$ to minimise $$𝐶$$.
 
 ![grad_desc.png]({{site.baseurl}}/img/grad_desc.png)
 *Figure 8. Gradient Descent*
