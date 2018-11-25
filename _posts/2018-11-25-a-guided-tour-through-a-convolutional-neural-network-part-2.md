@@ -6,7 +6,6 @@ mathjax: true
 math: true
 date: '2018-11-25'
 subtitle: Fully-connected Layers and the Single Neuron
-image: 'https://vinpetersen.github.io/img/neurons_hd.png'
 ---
 ### Flattening and the Fully-connected Layer
 
