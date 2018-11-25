@@ -10,7 +10,7 @@ subtitle: The Backward Pass
 
 The loss function quantifies the goodness of prediction by comparing predicted and true label. For a classification problem with a single true class, the cross-entropy loss function is a typical choice. 
 
-$$C_{n}(a^true,a^pred)=-\_sum{class} a_{class}^{true}log(a_{class}^{pred})$$
+$$C_{n}(a^{true},a^{pred})=-\sum_{class} a_{class}^{true}log(a_{class}^{pred})$$
 
 Let the vector $\boldsymbol{a^{(2)}}$ which encompasses the prediction scores of the model be  $$\boldsymbol{a^{pred}}$$.  $$\boldsymbol{a^{true}}$$ contains the true labels for every prediction, i.e. 1 for the true class, 0 otherwise. For every class, the true label is multiplied by the logarithm of the prediction. In fact, only the prediction score for the true class contributes to the overall loss result, since every other one is multiplied by zero. The product is negativised, resulting in a score that indicates a good agreement of predicted and true label through a low value. By this, an aim for the learning process is identified: lowering the loss function result. Since this whole procedure requires the predictions to be between 0 and 1, they are normalised beforehand.
 
