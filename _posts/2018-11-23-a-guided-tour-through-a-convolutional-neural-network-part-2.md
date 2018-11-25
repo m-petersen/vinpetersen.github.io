@@ -28,10 +28,6 @@ An elementwise vector multiplication with a subsequent sum over all products is 
 
 Overall, this computational integration procedure applies to every non-input neuron of the FC layer. Once all the data of an image went through the FC layer, the outputs of the output layer neurons represent interpretable scores for the prediction. The network predicts the class with the highest score value. 
 
-Typically, to let the network output probabilities for each class to predict, a subsequent softmax function is used.
-
-$$ S(a_{i}^{L}) = \frac{e^{a_{i}^{L}}{\sum_{i}^{classes} a_{i}^{L}}$$
-
 This finalises the forward pass.
 
 As mentioned before, the FC layer identifies patterns in the input vector which are characteristic for a specific class. In the learning process weights and biases adapt for this task. The goal is to weight the values in a way that increases the prediction score of the true class. This requires a comparison of prediction and true label. How this is achieved will be the subject of the next part.
