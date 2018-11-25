@@ -30,7 +30,7 @@ Before discussing both, some preliminaries considering the mathematical backgrou
 ![backprop.png]({{site.baseurl}}/img/backprop.png)
 *Figure 7. Backpropagation*
 
-It is achieved by application of the chain rule, which will be subject of the next part. Now, it is not necessary for understanding the next paragraphs. Since the calculation of this specific derivative contains backward steps through the network parts connecting $$w_{1,2}^{(2)}$$ and $$𝐶$$, it is called backpropagation (Figure 7). Having $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ allows to draw the graph $$C(w_{1,2}^{(2)}$$. The reverse conclusion is, at every point of the graph a gradient is defined indicating the direction to move $$w_{1,2}^{(2)}$$ to minimise $$𝐶$$.
+It is achieved by application of the chain rule, which will be subject of the next part. Now, it is not necessary for understanding the next paragraphs. Since the calculation of this specific derivative contains backward steps through the network parts connecting $$w_{1,2}^{(2)}$$ and $$𝐶$$, it is called backpropagation (Figure 7). Having $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ allows to draw the graph $$C(w_{1,2}^{(2)})$$. The reverse conclusion is, at every point of the graph a gradient is defined indicating the direction to move $$w_{1,2}^{(2)}$$ to minimise $$𝐶$$.
 
 ![grad_desc.png]({{site.baseurl}}/img/grad_desc.png)
 *Figure 8. Gradient Descent*
