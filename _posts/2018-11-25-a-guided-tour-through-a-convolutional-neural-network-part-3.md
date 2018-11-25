@@ -18,13 +18,14 @@ Let the vector $\boldsymbol{a^{(2)}}$ which encompasses the prediction scores of
 ### Backpropagation and Gradient Descent
 
 ![deriv.png]({{site.baseurl}}/img/deriv.png)
+
 *Figure 10. Derivatives*
 
 Like every other mathematical function, the cross-entropy loss function can be visualised in coordinate space (*Figure 10*). The cross-entropy result $$𝐶$$ is shown on the ordinate. It is a nonlinear function and as discussed in the last chapter its course depends on the model’s prediction value for the true class – $$C(a^{pred})$$.
 
-Obviously, a minimum is available, defining the value of 𝐶 to reach via learning the model parameters. Backpropagation and gradient descent are the processes that achieve this descent resulting in an optimisation of the prediction results. How is explained using the fully-connected layer as an example in an iconic and simplified manner.
+Obviously, a minimum is available, defining the value of $$𝐶$$ to reach via learning the model parameters. Backpropagation and gradient descent are the processes that achieve this descent resulting in an optimisation of the prediction results. How is explained using the fully-connected layer as an example in an iconic and simplified manner.
 
-Before discussing both, some preliminaries considering the mathematical background are necessary. A derivative of the cross-entropy function 𝐶 with respect to a^pred is denoted by dC/(da^pred ) or alternatively C'(a^pred) and describes to what degree 𝐶 changes if a^pred is changed. Simply spoken, it is a function itself indicating the gradient of the function at any point a^pred. It also displays how to change  a^pred to minimise C – a fact that is exploited by backpropagation and gradient descent. Although easily achievable by a simply deriving 𝐶, knowing dC/(da^pred ) is not helpful for solving the optimisation problem of the network, since a^pred is not changeable. Contrary to this, weights and biases of the network are. Hence, knowing for example ∂C/(〖∂w〗_1,2^((2)) )  respectively knowing how to change w_1,2^((2)) to minimise 𝐶 would be very helpful. 
+Before discussing both, some preliminaries considering the mathematical background are necessary. A derivative of the cross-entropy function $$𝐶$$ with respect to $$\boldsymbol{a^{pred}}$$ is denoted by $$dC/(\boldsymbol{da^{pred}})$$ or alternatively $$C'(\boldsymbol{a^{pred}})$$ and describes to what degree $$𝐶$$ changes if $$a^{pred}$$ is changed. Simply spoken, it is a function itself indicating the gradient of the function at any point $$a^{pred}$$. It also displays how to change  $$a^{pred]$$ to minimise $$C$$ – a fact that is exploited by backpropagation and gradient descent. Although easily achievable by a simply deriving $$𝐶$$, knowing $$\frac{dC}{da^{pred}}$$ is not helpful for solving the optimisation problem of the network, since $$a^{pred}$$ is no parameter. Contrary to this, weights and biases of the network are. Hence, knowing for example $$\frac{\deltaC}{\deltaw_{1,2}^{(2)}}$$ respectively knowing how to change $$w_{1,2}^{(2)} to minimise $$𝐶$$ would be very helpful. 
 
 ![backprop.png]({{site.baseurl}}/img/backprop.png)
 *Figure 7. Backpropagation*
