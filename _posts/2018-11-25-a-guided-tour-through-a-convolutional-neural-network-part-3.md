@@ -17,8 +17,6 @@ Let the vector $\boldsymbol{a^{(2)}}$ which encompasses the prediction scores of
 
 ### Backpropagation and Gradient Descent
 
-<img src="https://github.com/vinpetersen/vinpetersen.github.io/tree/master/img/deriv.png" width="200" height="200" />
-
 ![deriv.png]({{site.baseurl}}/img/deriv.png)
 *Figure 6. Derivatives*
 
@@ -45,4 +43,3 @@ Thereupon another cycle of forward and backward pass will be initialised, leadin
 Finally, it should be mentioned, that operating on non-training data is nothing more than exclusively performing the forward pass, i.e. no learning during the backward pass.
 
 This concludes the series.
-
