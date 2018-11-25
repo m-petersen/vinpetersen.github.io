@@ -3,6 +3,7 @@ layout: post
 published: true
 title: A Guided Tour Through a Convolutional Neural Network - Part 3
 mathjax: true
+math: true
 ---
 ## A New Post
 
