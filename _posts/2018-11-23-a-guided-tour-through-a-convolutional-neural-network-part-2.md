@@ -4,6 +4,8 @@ published: true
 title: A Guided Tour Through a Convolutional Neural Network - Part 2
 mathjax: true
 math: true
+date: '2018-11-25'
+subtitle: Fully-connected Layer and the Single Neuron
 ---
 ### Flattening and the Fully-connected Layer
 
