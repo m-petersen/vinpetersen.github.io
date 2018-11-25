@@ -69,8 +69,8 @@ This concludes part 1 of the series and thereby the first part of the forward pa
 
 ### Inspiration and references
 
-* [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai
-* [Neural Networks and Deep Learning by Andrew Ng](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) and deeplearning.ai 
+* [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be openly accessible in early 2019)
+* [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai 
 * LeCun, Y., Bottou, L., Bengio, Y., Haffner, P., 1998. Gradient-Based Learning Applied to Document Recognition.
 * Zeiler, M.D., Fergus, R., 2014. Visualizing and Understanding Convolutional Networks
 * [Ujjwal Karn](https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/) provides multiple animations for the issues discussed.
