@@ -35,7 +35,7 @@ It is achieved by application of the chain rule, which will be subject of the ne
 ![grad_desc.png]({{site.baseurl}}/img/grad_desc.png)
 *Figure 8. Gradient Descent*
 
-Now, the optimisation is achieved via application of the gradient descent formula displayed in Figure 8: at first the gradient at the point w_1,2^((2)) calculated by inputting it in $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ is multiplied with a learning rate variable. The product is subtracted from the initial value of $$w_{1,2}^{(2)}$$, resulting in an updated value for $$w_{1,2}^{(2)}$$ in the direction that minimises $$𝐶$$. This step is carried out until the algorithm reaches the function’s minimum and this point is called convergence. This practice is of course carried out for every learnable parameter in the network.
+Now, the optimisation is achieved via application of the gradient descent formula displayed in Figure 8: at first the gradient at the point $$w_{1,2}^{(2)}$$ calculated by inputting it in $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ is multiplied with a learning rate variable. The product is subtracted from the initial value of $$w_{1,2}^{(2)}$$, resulting in an updated value for $$w_{1,2}^{(2)}$$ in the direction that minimises $$𝐶$$. This step is carried out until the algorithm reaches the function’s minimum and this point is called convergence. This practice is of course carried out for every learnable parameter in the network.
 
 Finally, the network parameters are optimised, which finalises the backward pass. This concatenation of steps is carried out for every parameter of the network. The optimisation process in convolutional layers differs slightly and will also be examined in the next part. 
 
