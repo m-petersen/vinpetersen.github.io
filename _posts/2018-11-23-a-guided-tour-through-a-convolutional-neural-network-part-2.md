@@ -5,7 +5,7 @@ title: A Guided Tour Through a Convolutional Neural Network - Part 2
 mathjax: true
 math: true
 ---
-### Flattening, the Fully-connected Layer and the Single Neuron
+### Flattening and the Fully-connected Layer
 
 As mentioned in part 1 of the series, there are multiple subtypes of neural networks besides CNN. As one of those subtypes, artificial neural networks (ANN) find widespread application in prediction based on tabular data. Their architecture is also harnessed in the fully-connected (FC) layers of CNN, which forms the final section of the forward pass and results in a prediction.
 
@@ -15,6 +15,8 @@ As mentioned in part 1 of the series, there are multiple subtypes of neural netw
 Prior to the FC layers, the data gets flattened: initially being in matrix form, a row-wise rearrangement of feature map values results in one single vector. Now, the values representing detections are stacked in vector form. FC layers serve the purpose of recognising a class membership specific pattern in the vector. Based on that, a prediction will be made. In the next examples following denotation has been used: scalars are denoted by thin letters ($$a$$), vectors by bold ($$\boldsymbol{a}$$) and matrices by bold, capital letters ($$\boldsymbol{W}$$). A capital T marks a vector or matrix transpose ($$\boldsymbol{aT}$$). Superscript indices are referring to the layer affiliation, subscript indices to the localisation in a vector or matrix respectively: scalar $$a_i^{(l)}$$ belongs to layer $$l$$ and refers to the $$i$$-th element of vector $$\boldsymbol{a^{(l)}}$$; Scalar $$w_{i,j}^{(l)}$$ is located at the intersection of the $$i$$-th row and $$j$$-th column of matrix $$\boldsymbol{W^{(l)}}$$; vector $$\boldsymbol{w_{i,}^{(l)}}$$ refers to the $$i$$-th row of matrix $$\boldsymbol{W^{(l)}}$$.
 
 The exact architecture of the FC layers is a directed acyclical graph and thereby resembles a biological neural network. It consists of individual computation units, the neurons, and the connections between them representing weights. The macroscopical structure is divided into distinct layers and exemplarily illustrated in *Figure 4*: the input layer $$\boldsymbol{a^{(0)}}$$ consists of the input vector and contains as many neurons as the input vector has elements. Its purpose is less computing than distributing incoming values to all neurons of the next layer. The output layer $$\boldsymbol{a^{(2)}}$$ consists of as many neurons as there are classes to predict. Both, input and output layer, are connected by one or multiple hidden layers, here only $$\boldsymbol{a^{(1)}}$$, mainly carrying out the computations the final prediction is based on. Weights or respectively connections are collected in $$\boldsymbol{W^{(1)}}$$ and $$\boldsymbol{W^{(2)}}$$, i.e. are assigned to the layer following them. Noticeably, every neuron is connected with every other neuron of the neighbouring layers, which explains the name choice of *fully-connected* for the layers. Why layers and weights are denoted as vectors and matrices will become clearer while looking at the inner workings of a single neuron.
+
+### The Single Neuron
 
 ![single_neuron.png]({{site.baseurl}}/img/single_neuron.png)
 *Figure 9. Single neuron*
@@ -29,7 +31,8 @@ As mentioned before, the FC layer identifies patterns in the input vector which 
 
 Part 2 ends here. If you liked what you have seen, I would be happy if you share this post.
 
-References
+### References
+
 
 
 
