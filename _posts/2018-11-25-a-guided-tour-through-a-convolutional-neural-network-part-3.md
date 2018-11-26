@@ -35,7 +35,7 @@ It is achieved by application of the chain rule, which will be subject of the ne
 ![grad_desc.png]({{site.baseurl}}/img/grad_desc.png)
 *Figure 13. Gradient Descent*
 
-Now, the optimisation is achieved via application of the gradient descent formula displayed in *Figure 13*: at first the gradient at the point $$w_{1,2}^{(2)}$$ calculated by inputting it in $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ is multiplied with a learning rate variable. The product is subtracted from the initial value of $$w_{1,2}^{(2)}$$, resulting in an updated value for $$w_{1,2}^{(2)}$$ in the direction that minimises $$𝐶$$. This step is carried out until the algorithm reaches the function’s minimum and this point is called convergence. To be more detailed, the prorcess stops if $$C$$ and the $$C$$ of the preceding optimisation step do differ insignificantly. Whether they do is defined by a threshold defined beforehand.
+Now, the optimisation is achieved via application of the gradient descent formula displayed in *Figure 13*: at first the gradient at the point $$w_{1,2}^{(2)}$$, the output of $$\frac{∂C}{∂w_{1,2}^{(2)}}$$, is multiplied with a learning rate variable. The product is subtracted from the initial value of $$w_{1,2}^{(2)}$$, resulting in an updated value for $$w_{1,2}^{(2)}$$ in the direction that minimises $$𝐶$$. This step is carried out until the algorithm reaches the function’s minimum and this point is called convergence. To be more detailed, the prorcess stops if $$C$$ and the $$C$$ of the preceding optimisation step do differ insignificantly. Whether they do is defined by a threshold defined beforehand.
 
 Finally, the network parameters are optimised, which finalises the backward pass. This concatenation of steps is carried out for every learnable parameter of the network. Thereupon another cycle of forward and backward pass will be initialised, leading to a better prediction and further optimisation of weights. Typically, a lot more cycles are initialised to maximise the prediction quality.
 
@@ -45,4 +45,4 @@ The final part of the series will take a deeper look into backpropagation in gen
 
 ### References and Inspiration
 * [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly available in early 2019)
-* [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai 
+* [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
