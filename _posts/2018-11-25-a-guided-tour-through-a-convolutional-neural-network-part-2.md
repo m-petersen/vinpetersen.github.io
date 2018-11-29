@@ -34,6 +34,8 @@ This finalises the forward pass.
 
 As mentioned before, the FC layer identifies patterns in the input vector which are characteristic for a specific class. In the learning process weights and biases adapt for this task. The goal is to weight the values in a way that increases the prediction score of the true class. This requires a comparison of prediction and true label. How this is achieved will be the subject of the next part.
 
+If you have questions or feedback don't hesitate to contact me on Twitter [@vinpetersen](https://twitter.com/vinpetersen).
+
 ### Inspiration and References
 * [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly available in early 2019)
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
