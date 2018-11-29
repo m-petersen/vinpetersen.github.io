@@ -53,4 +53,4 @@ If you have questions or feedback don't hesitate to contact me on Twitter [@vinp
 ### References and Inspiration
 * [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly available in early 2019)
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
-* [Mathematics for Machine Learning: Multivariate Calculus](https://www.coursera.org/learn/multivariate-calculus-machine-learning) by Samuel J. Cooper and colleagues is an exceptionally well-designed course that I can recommend especially for those who want to learn more about the basics of maths mentioned here.
+* [Mathematics for Machine Learning: Multivariate Calculus](https://www.coursera.org/learn/multivariate-calculus-machine-learning) by Samuel J. Cooper and colleagues is an exceptionally novice-friendly and well-designed course which I can especially recommend for those who want to learn more about the basics of maths mentioned here.
