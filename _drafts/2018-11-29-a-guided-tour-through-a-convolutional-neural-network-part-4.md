@@ -15,7 +15,7 @@ Since the computations of the graph are slightly simpler, it shall serve here as
 
 Now, let's say we aim to compute $$\frac{∂J}{∂a}$$. To achieve that we start with computing the derivatives of all the nested subfunctions reaching from input $$a$$ to output $$J$$. By application of the common derivation rules it is a simple process: $$\frac{dJ}{dv}=2$$, $$\frac{∂v}{∂u}=1$$ and $$\frac{∂u}{∂a}=b$$. After that, all these derivatives are chained together which yields $$\frac{∂J}{∂a}$$, so $$\frac{∂J}{∂a}=\frac{dJ}{dv}\frac{dv}{du}\frac{du}{da}=2∗1∗2=4$$. Now we know that the gradient of function $$J$$ at point $$a=3$$ is positive and equals 4 and consequently that we should minimise $$a$$ if we would like to minimise $$J$$. 
 
-This whole principle is called chain rule and is also utilised in backpropagation in the absolutely same manner (*Figure 15*: blue elements). The functions in the fully connected layers are traced back by computing their derivatives and then concatenating those leading to the parameter of interest via the chain rule, which results in the derivative of the cross-entropy with respect to the parameter we backpropagated to.
+This whole principle is called chain rule and is also utilised in backpropagation in the absolutely same manner (*Figure 15*: blue elements), even though with other functions and values. The functions in the fully connected layers are traced back by computing their derivatives and then concatenating those leading to the parameter of interest via the chain rule, which results in the derivative of the cross-entropy with respect to the parameter we backpropagated to.
 
 The computations result in the following equations for weights and biases.
 
