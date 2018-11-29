@@ -48,3 +48,4 @@ The final part of the series will take a deeper look into backpropagation in gen
 ### References and Inspiration
 * [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly available in early 2019)
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
+* [Mathematics for Machine Learning: Multivariate Calculus](https://www.coursera.org/learn/multivariate-calculus-machine-learning) by Samuel J. Cooper and colleagues is an exceptionally well-designed course that I can recommend especially for those who want to learn more about the basics of maths mentioned here.
