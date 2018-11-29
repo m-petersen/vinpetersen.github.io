@@ -5,7 +5,7 @@ title: A Guided Tour Through a Convolutional Neural Network - Part 3
 mathjax: true
 math: true
 subtitle: The Backward Pass
-date: 29/11/2018
+date: '2019-11-29'
 ---
 This post is part of a series about the inner workings of convolutional neural networks. In order to be best prepared for the following topics, especially by knowing the denotation, I recommend to deal with parts [1](https://vinpetersen.github.io/2018-11-23-a-guided-tour-through-a-convolutional-neural-network-part-1/) and [2](https://vinpetersen.github.io/2018-11-25-a-guided-tour-through-a-convolutional-neural-network-part-2/) beforehand.
 
