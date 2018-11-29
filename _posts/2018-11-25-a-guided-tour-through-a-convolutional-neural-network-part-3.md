@@ -41,7 +41,7 @@ Now, the optimisation is achieved via application of the gradient descent formul
 
 Finally, the network parameters are optimised, which finalises the backward pass. This concatenation of steps is carried out for every learnable parameter of the network. Thereupon another cycle of forward and backward pass will be initialised, leading to a better prediction and further optimisation of weights. Typically, a lot more cycles are initialised to maximise the prediction quality.
 
-Finally, it should be mentioned, that operating on non-training data is nothing more than exclusively performing the forward pass, i.e. no learning during the backward pass.
+Finally, it should be mentioned, that operating on non-training data like validation or test set data is nothing more than exclusively performing the forward pass, i.e. no learning during the backward pass occurs.
 
 The final part of the series will take a deeper look into backpropagation in general and in the special case of convolutional layers.
 
