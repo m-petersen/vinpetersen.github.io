@@ -32,7 +32,7 @@ Before discussing both, some preliminaries considering the mathematical backgrou
 
 It is achieved by application of the chain rule, which will be subject of the next part. Now, it is not necessary for understanding the following paragraphs. Since the calculation of this specific derivative contains backward steps through the network parts connecting $$w_{1,2}^{(2)}$$ and $$𝐶$$, the process is called backpropagation (*Figure 12*). Having $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ allows to draw the graph $$C(w_{1,2}^{(2)})$$. The reverse conclusion is, at every point of the graph a gradient is defined indicating the direction to move $$w_{1,2}^{(2)}$$ to minimise $$𝐶$$.
 
-To wrap things up, after we have initialised our weights and biases randomly before our first iteration, the resulting $$C$$ will be located on a certain point of function $$C(w_{1,2}^{(2)})$$. $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ will be an easily computable derivative of this function which tells us how the gradient looks at that point and consequently how to move $$w_{1,2}^{(2)}$$ it to minimise C. 
+To wrap things up, after we have initialised our weights and biases randomly before our first iteration, the resulting $$C$$ will be located on point $$w_{1,2}^{(2)}$$ of function $$C(w_{1,2}^{(2)})$$. $$\frac{∂C}{∂w_{1,2}^{(2)}}$$ will be an easily computable derivative of this function which tells us how the gradient looks at that point and consequently how to move $$w_{1,2}^{(2)}$$ it to minimise C. 
 
 ![grad_desc.png]({{site.baseurl}}/img/grad_desc.png)
 *Figure 13. Gradient Descent*
