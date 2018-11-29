@@ -21,6 +21,8 @@ The computations result in the following equations for weights and biases.
 
 $$$$
 
+To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by the derivative of C with respect to the $$z$$ the weight is leading to ($$\frac{∂C}{∂z_{i}}$$)
+
 
 
 Thereby, the name backpropagation gets comprehensible: by applying the chain rule a backward movement through the network is performed.
