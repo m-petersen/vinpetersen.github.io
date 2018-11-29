@@ -2,7 +2,7 @@
 layout: post
 published: false
 title: A Guided Tour Through a Convolutional Neural Network - Part 4
-subtitle: The Intuition Behind Backpropagation
+subtitle: The Maths Behind Backpropagation
 ---
 This post is part of a series about the inner workings of convolutional neural networks. In order to be best prepared for the following topics, especially by knowing the denotation, I recommend to deal with parts [1](https://vinpetersen.github.io/2018-11-23-a-guided-tour-through-a-convolutional-neural-network-part-1/), [2](https://vinpetersen.github.io/2018-11-25-a-guided-tour-through-a-convolutional-neural-network-part-2/) and [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/) before continuing.
 
