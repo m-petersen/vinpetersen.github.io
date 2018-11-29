@@ -21,7 +21,6 @@ This whole principle is called chain rule and is also utilised in backpropagatio
 
 Thereby, the name backpropagation gets comprehensible: by applying the chain rule a backward movement through the network is performed.
 
-This pro
 
 
 
