@@ -2,6 +2,7 @@
 layout: post
 published: false
 title: A Guided Tour Through a Convolutional Neural Network - Part 4
+subtitle: The Intuition Behind Backpropagation
 ---
 This post is part of a series about the inner workings of convolutional neural networks. In order to be best prepared for the following topics, especially by knowing the denotation, I recommend to deal with parts [1](https://vinpetersen.github.io/2018-11-23-a-guided-tour-through-a-convolutional-neural-network-part-1/), [2](https://vinpetersen.github.io/2018-11-25-a-guided-tour-through-a-convolutional-neural-network-part-2/) and [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/) before continuing.
 
@@ -21,9 +22,9 @@ The computations result in the following equations for weights and biases.
 
 $$$$
 
-To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by the derivative of C with respect to the $$z$$ the weight is leading to ($$\frac{∂C}{∂z_{i}}$$)
+To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by $$\frac{∂C}{∂z_{i}}$$, the derivative of C with respect to the $$z$$ the weight is leading to, (Figure 16).
 
-
+Of course the derivatives for any parameter to be learned are computed. 
 
 Thereby, the name backpropagation gets comprehensible: by applying the chain rule a backward movement through the network is performed.
 
