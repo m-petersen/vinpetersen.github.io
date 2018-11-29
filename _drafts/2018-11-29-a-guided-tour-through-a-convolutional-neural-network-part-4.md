@@ -9,13 +9,17 @@ To conquer backpropagation in a novice-friendly manner, before we start this qui
 
 A juxtaposition of mathematical functions can be visualised as a computational graph. *Figure 14* illustrates that process and here variables and functions are shown in rectangles while inputs and function results are shown in circles. An exemplary input of $$a=3$$, $$b=2$$ and $$c=4$$ results in $$J=20$$ as an output.
 
-The parallels to a FC layer appear obvious, since it's also simply a concatenation of functions in computational graph format. The way resulting in the output can be considered as the forward pass (*Fig. 4: grey elements*) of the computational graph. And likewise in common is the possibility to compute the derivative of the last function with respect to an arbitrary value in the graph, which would correspond to the backward pass (*Fig. 4: blue elements*) of a CNN.
+The parallels to a FC layer appear obvious, since it's also simply a concatenation of functions in computational graph format. The way resulting in the output can be considered as the forward pass (*Fig. 14: grey elements*) of the computational graph. And likewise in common is the possibility to compute the derivative of the last function with respect to an arbitrary value in the graph, which would correspond to the backward pass (*Fig. 14: blue elements*) of a CNN.
 
 Since the computations of the graph are slightly simpler, it shall serve here as an example for a complete computation of the backward pass just as it would appear in a CNN. If simple derivation rules aren't present, I suggest to learn or refresh them before reading further. My go to resource is the course by [Samuel J. Cooper and colleagues](https://www.coursera.org/learn/multivariate-calculus-machine-learning).
 
 Now, let's say we aim to compute $$\frac{∂J}{∂a}$$. To achieve that we start with computing the derivatives of all the nested subfunctions reaching from input $$a$$ to output $$J$$. By application of the common derivation rules it is a simple process: $$\frac{dJ}{dv}=2$$, $$\frac{∂v}{∂u}=1$$ and $$\frac{∂u}{∂a}=b$$. After that, all these derivatives are chained together which yields $$\frac{∂J}{∂a}$$, so $$\frac{∂J}{∂a}=\frac{dJ}{dv}\frac{dv}{du}\frac{du}{da}=2∗1∗2=4$$. Now we know that the gradient of function $$J$$ at point $$a=3$$ is positive and equals 4 and consequently that we should minimise $$a$$ if we would like to minimise $$J$$. 
 
-This whole principle is called chain rule and is also utilised in backpropagation in the absolutely same manner. The functions in the fully connected layers are traced back by computing their derivatives with respect to the variable the motion is heading to and then concatenating these via the chain rule.
+This whole principle is called chain rule and is also utilised in backpropagation in the absolutely same manner (*Figure 15*: blue elements). The functions in the fully connected layers are traced back by computing their derivatives and then concatenating those leading to the parameter of interest via the chain rule, which results in the derivative of the cross-entropy with respect to the parameter we backpropagated to.
+
+The computations result in the following equations for weights and biases.
+
+$$$$
 
 
 
@@ -30,4 +34,4 @@ Thereby, the name backpropagation gets comprehensible: by applying the chain rul
 
 
 
-It's easy to see that a 
+It's easy to see that a
