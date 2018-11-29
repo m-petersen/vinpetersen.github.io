@@ -45,6 +45,8 @@ Finally, it should be mentioned, that operating on non-training data like valida
 
 The final part of the series will take a deeper look into backpropagation in general and in the special case of convolutional layers.
 
+If you have question or feedback don't hesitate to contact me on Twitter [@vinpetersen](https://twitter.com/vinpetersen)
+
 ### References and Inspiration
 * [Deep Learning For Coders](https://course.fast.ai/) by Jeremy Howard and Fast.ai (v3 will be publicly available in early 2019)
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
