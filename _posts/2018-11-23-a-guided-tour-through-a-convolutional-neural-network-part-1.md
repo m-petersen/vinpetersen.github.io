@@ -65,7 +65,7 @@ A function called rectified linear unit (ReLU) is applied to the output feature 
 
 The thresholded feature maps are handed over to a max pooling layer (*Fig. 7*). Here, a simpler type of matrix calculation happens, though similar to convolution. A filter is placed on feature map subsets, again in sliding-window fashion, and extracts the highest value of the subsets, keeping them in a condensed output feature map. The purpose is dropping superfluous data: values not signifying any contour detection are crossed-out, whereas the spatial information is roughly kept. This results in lower computation costs.
 
-This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I would be grateful.
+This concludes part 1 of the series and thereby the first part of the forward pass. In the second part we will carry on with the fully-connected layers. If you liked that post consider sharing. I would be grateful. If you have question or feedback don't hesitate to contact me on Twitter [@vinpetersen](https://twitter.com/vinpetersen).
 
 ### Inspiration and references
 
