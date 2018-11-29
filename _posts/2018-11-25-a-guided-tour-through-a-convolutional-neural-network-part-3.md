@@ -6,6 +6,8 @@ mathjax: true
 math: true
 subtitle: The Backward Pass
 ---
+This post is part of a series about the inner workings of convolutional neural networks. In order to be best prepared for the following topics, especially by knowing the denotation, I recommend to start with [part 1](https://vinpetersen.github.io/2018-11-23-a-guided-tour-through-a-convolutional-neural-network-part-1/) or [part 2](https://vinpetersen.github.io/2018-11-25-a-guided-tour-through-a-convolutional-neural-network-part-2/)
+
 ### The Cross-entropy Loss Function
 
 The loss function quantifies the goodness of prediction by comparing predicted and true label. For a classification problem with a single true class, the cross-entropy loss function is a typical choice. 
