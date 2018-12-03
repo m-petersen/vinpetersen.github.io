@@ -40,26 +40,17 @@ $$\frac{∂C}{∂b_{i}^{l}}=\frac{∂C}{∂z_{i}^{l}}$$
 
 The derivative regarding a bias is simply the error of the same neuron.
 
-Of course the derivatives for any parameter to be learned are computed. After the computations, the derivatives are utilisied by gradient descent to optimise the weights as discussed in part [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/)
+Of course the derivatives for any parameter to be learned are computed. After the computations, the derivatives are utilisied by gradient descent to optimise the weights as discussed in part [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/).
+
+To move furtherly backwards through the network $$\frac{∂C}{∂b_{i}^{l}}$$. 
+
+$$\frac{∂C}{∂b_{i}^{l}}=\frac{∂C}{∂z_{i}^{l}}$$
 
 ### Backpropagation in convolutional layers
 
 ![conv_comp_graph.png]({{site.baseurl}}/img/conv_comp_graph.png)
 *Figure 17. Computational graph of a convolutional layer*
 
-Just as fully-connected layers, convolutional layers can also be visualised in computational graph format. Thereby, specific characteristics are revealed: sparseness, meaning that the the neurons are not fully-connected, and shared weights.
+Just as fully-connected layers, convolutional layers can also be visualised in computational graph format. Thereby, two specific characteristics are revealed. At first the graph is sparse, meaning that the the neurons are not fully-connected. Secondly, weights are shared between neurons (*Fig 17*: colour-coded connections).
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-It's easy to see that a
