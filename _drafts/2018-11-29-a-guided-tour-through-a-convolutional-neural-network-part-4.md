@@ -44,6 +44,9 @@ Of course the derivatives for any parameter to be learned are computed. After th
 
 To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. the vector containing all errors of layer $l$, is computed via: 
 $$\frac{∂C}{∂z^{l}}=(\boldsymbol{(∂w_{i,j}^{l+1})^{T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
+
+!!! Grafik !!!
+
 In the equation, the backward movement is retraced. From the initial $\frac{∂C}{∂z_{i}^{l+1}}$ a backward step is taken by mutliplying (\boldsymbol{(∂w_{,j}^{l+1}}) to get $\frac{∂C}{∂a_{j}^{l+1}}$
 
 ### Backpropagation in convolutional layers
