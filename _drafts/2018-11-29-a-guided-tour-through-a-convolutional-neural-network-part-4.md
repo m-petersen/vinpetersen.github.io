@@ -42,8 +42,8 @@ The derivative regarding a bias is simply the error of the same neuron.
 
 Of course the derivatives for any parameter to be learned are computed. After the computations, the derivatives are utilisied by gradient descent to optimise the weights as discussed in part [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/).
 
-To move furtherly backwards through the network $$\frac{∂C}{∂z_{i}^{l}}$$ is computed via: 
-$$\frac{∂C}{∂z_{i}^{l}}=(\boldsymbol{(∂w_{,j}^{l+1}})\frac{∂C}{∂z_{i}^{l+1}})g'(z_{i}^{l})$$
+To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. the vector containing all errors of layer $l$, is computed via: 
+$$\frac{∂C}{∂z^{l}}=(\boldsymbol{(∂w_{i,j}^{l+1})^{T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
 In the equation, the backward movement is retraced. From the initial $\frac{∂C}{∂z_{i}^{l+1}}$ a backward step is taken by mutliplying (\boldsymbol{(∂w_{,j}^{l+1}}) to get $\frac{∂C}{∂a_{j}^{l+1}}$
 
 ### Backpropagation in convolutional layers
