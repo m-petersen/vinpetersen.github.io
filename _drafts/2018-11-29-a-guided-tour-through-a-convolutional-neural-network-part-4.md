@@ -53,4 +53,7 @@ $$\frac{∂C}{∂b_{i}^{l}}=\frac{∂C}{∂z_{i}^{l}}$$
 
 Just as fully-connected layers, convolutional layers can also be visualised in computational graph format. Thereby, two specific characteristics are revealed. At first the graph is sparse, meaning that the the neurons are not fully-connected. Secondly, weights are shared between neurons (*Fig 17*: colour-coded connections).
 
+![conv_backprop_wei.png]({{site.baseurl}}/img/conv_backprop_wei.png)
+*Figure 18. Computing *$$\frac{∂C}{∂w_{ij}^{l}}* in a convolutional layer*
+
 To get the derivative of $C$ with respect to an arbitrary shared weight in a convolutional layer $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$ is computed for every pair of neurons connected by a shared weight. Subsequently the derivatives are summed. For the whole convolutional layer, these steps can be represented as a convolution operation (Figure 18)
