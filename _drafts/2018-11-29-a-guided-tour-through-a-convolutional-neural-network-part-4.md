@@ -6,6 +6,8 @@ subtitle: The Maths Behind Backpropagation
 ---
 This post is part of a series about the inner workings of convolutional neural networks. In order to be best prepared for the following topics, especially by knowing the denotation, I recommend to deal with parts [1](https://vinpetersen.github.io/2018-11-23-a-guided-tour-through-a-convolutional-neural-network-part-1/), [2](https://vinpetersen.github.io/2018-11-25-a-guided-tour-through-a-convolutional-neural-network-part-2/) and [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/) before continuing.
 
+### Backpropagation in Detail
+
 To conquer backpropagation in a novice-friendly manner, before we start this quite math heavy part, let's take a look at an computational graph beforehand.
 
 ![comp_graph.png]({{site.baseurl}}/img/computational_graph.png)
@@ -28,15 +30,28 @@ The computations result in the following equations for weights and biases.
 
 $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$
 
-To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by $$\frac{∂C}{∂z_{i}}$$, the derivative of C with respect to the $$z$$ the weight is leading to, (Figure 16). $$\frac{∂C}{∂z_{i}}$$ is also called the error of a neuron.
+![weight_dev.png]({{site.baseurl}}/img/weight_dev.png)
+*Figure 16: Computation of cross-entropy loss with respect to an arbitrary weight*
+
+
+To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by $$\frac{∂C}{∂z_{i}}$$, the derivative of C with respect to the $$z$$ the weight is leading to, (Figure 16). $$\frac{∂C}{∂z_{i}}$$ is also called the error of a neuron (*Fig. 16*).
 
 $$\frac{∂C}{∂b_{i}^{l}}=\frac{∂C}{∂z_{i}^{l}}$$
 
 The derivative regarding a bias is simply the error of the same neuron.
 
-Of course the derivatives for any parameter to be learned are computed. 
+Of course the derivatives for any parameter to be learned are computed. After the computations, the derivatives are utilisied by gradient descent to optimise the weights as discussed in part [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/)
 
-Thereby, the name backpropagation gets comprehensible: by applying the chain rule a backward movement through the network is performed.
+### Backpropagation in convolutional layers
+
+![conv_comp_graph.png]({{site.baseurl}}/img/conv_comp_graph.png)
+*Figure 17. Computational graph of a convolutional layer*
+
+Just as fully-connected layers, convolutional layers can also be visualised in computational graph format. Thereby, specific characteristics are revealed: sparseness, meaning that the the neurons are not fully-connected, and shared weights.
+
+
+
+
 
 
 
