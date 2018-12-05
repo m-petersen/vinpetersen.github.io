@@ -71,6 +71,8 @@ Thus, every weight of a filter is optimised to minimise $C$ which results in bet
 
 This concludes the my series about the inner workings of a convolutional neural network. In my opinion, these incredibly potent algorithms are far more intelligible than most people think and I hope after this intense reading I could demonstrate that in a convincing manner.
 
+If you have questions or feedback don't hesitate to contact me on Twitter [@vinpetersen](https://twitter.com/vinpetersen).
+
 ### References and Inspiration
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html) by Michael Nielsen
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
