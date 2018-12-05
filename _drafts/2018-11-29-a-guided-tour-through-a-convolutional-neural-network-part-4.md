@@ -8,7 +8,7 @@ This post is part of a series about the inner workings of convolutional neural n
 
 ### Backpropagation in Detail
 
-To conquer backpropagation in a novice-friendly manner, before we start this quite math heavy part, let's take a look at an computational graph beforehand.
+To conquer backpropagation in a novice-friendly manner, before this quite math heavy part starts, it's worth taking a look at an computational graph beforehand.
 
 ![comp_graph.png]({{site.baseurl}}/img/computational_graph.png)
 *Figure 14. Exemplary computational graph*
