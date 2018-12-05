@@ -59,12 +59,14 @@ Just as fully-connected layers, convolutional layers can also be visualised in c
 ![conv_backprop_wei.png]({{site.baseurl}}/img/conv_backprop_wei.png)
 *Figure 19. Computing *$$\frac{∂C}{∂w_{ij}^{l}}* in a convolutional layer*
 
-To get the derivative of $C$ with respect to an arbitrary shared weight in a convolutional layer $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$ is computed for every pair of neurons connected by a shared weight. Subsequently the derivatives are summed. To compute $$\frac{∂C}{∂w_{ij}^{l}}$$ with regard to every weight of the convolutional layer, the steps can be represented as a convolution operation (Figure 19).
+To get the derivative of $C$ with respect to an arbitrary shared weight in a convolutional layer $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$ is computed for every pair of neurons connected by a shared weight. Subsequently the derivatives are summed. To compute $$\frac{∂C}{∂w_{ij}^{l}}$$ with regard to every weight of the convolutional layer, the steps can be represented as a convolution operation (*Figure 19*).
 
 ![conv_backprop_err.png]({{site.baseurl}}/img/conv_backprop_err2.png)
 *Figure 20. Computing *$$\frac{∂C}{∂z_{i}^{l-1}}* in a convolutional layer*
 
-Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. In other words. If an activation function comes into action in a convolution layer, the errors are of course also moved backwards through them.
+Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. If an activation function comes into action in a convolutional layer, the errors are of course also moved backwards through it.
+
+Thus, every weight of a filter is optimised to minimise the prediction measured by $C$ which results in better detection of lower and higher level features respectively.
 
 This concludes the my series about the inner workings of a convolutional neural network. In my opinion, these incredibly potent algorithms are far more intelligible than most people think and I hope after this intense reading I could show that in a convincing manner.
 
