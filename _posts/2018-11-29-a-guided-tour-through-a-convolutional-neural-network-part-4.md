@@ -47,7 +47,7 @@ $$\boldsymbol{\frac{∂C}{∂z^{l}}=(W^{l+1 T})\frac{∂C}{∂z^{l+1}})g'(z^{l})
 ![backprop_detailed2.png]({{site.baseurl}}/img/backprop_detailed2.png)
 *Figure 17. Moving the error backwards through the network*
 
-In the equation, the backward movement is retraced. From the initial $\boldsymbol{\frac{∂C}{∂z^{l+1}}}$ a backward step is taken by mutliplying by $\boldsymbol{W^{l+1T}}$ to get $\boldsymbol{\frac{∂C}{∂a_{j}^{l+1}}}$ (*Figure 17: blue elements*). Subsequently, the error is moved through the activation function by applying an elementwise multiplication by $\boldsymbol{g(z^{l+1}}$. The resulting vector $\boldsymbol{\frac{∂C}{∂z^{l}}}$ contains all errors for layer $l$  allowing to compute derivatives of $C$ regarding the parameters of layer $l$ with the equations above.
+In the equation, the backward movement is retraced. From the initial $\boldsymbol{\frac{∂C}{∂z^{l+1}}}$ a backward step is taken by multiplying by $\boldsymbol{W^{l+1T}}$ to get $\boldsymbol{\frac{∂C}{∂a_{j}^{l+1}}}$ (*Figure 17: blue elements*). Subsequently, the error is moved through the activation function by applying an elementwise multiplication by $\boldsymbol{g(z^{l+1}}$. The resulting vector $\boldsymbol{\frac{∂C}{∂z^{l}}}$ contains all errors for layer $l$  allowing to compute derivatives of $C$ regarding the parameters of layer $l$ with the equations above.
 
 ### Backpropagation in convolutional layers
 
