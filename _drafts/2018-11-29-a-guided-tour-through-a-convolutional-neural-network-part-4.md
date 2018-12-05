@@ -45,23 +45,23 @@ To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. 
 $$\frac{∂C}{∂z^{l}}=(\boldsymbol{(∂w_{i,j}^{l+1})^{T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
 
 ![backprop_detailed2.png]({{site.baseurl}}/img/backprop_detailed2.png)
-*Figure 16. Moving the error backwards through the network*
+*Figure 17. Moving the error backwards through the network*
 
-In the equation, the backward movement is retraced. From the initial $\boldsymbol{\frac{∂C}{∂z^{l+1}}}$ a backward step is taken by mutliplying by $\boldsymbol{W^{l+1T}}$ to get $\boldsymbol{\frac{∂C}{∂a_{j}^{l+1}}}$ (*Figure 16: blue elements*). Subsequently, the error is moved through the activation function by applying an elementwise multiplication by $\boldsymbol{g(z^{l+1}}$. The resulting vector $\boldsymbol{\frac{∂C}{∂z^{l}}}$ contains all errors for layer $l$  allowing to compute derivatives of $C$ regarding the parameters of layer $l$ with the equations above.
+In the equation, the backward movement is retraced. From the initial $\boldsymbol{\frac{∂C}{∂z^{l+1}}}$ a backward step is taken by mutliplying by $\boldsymbol{W^{l+1T}}$ to get $\boldsymbol{\frac{∂C}{∂a_{j}^{l+1}}}$ (*Figure 17: blue elements*). Subsequently, the error is moved through the activation function by applying an elementwise multiplication by $\boldsymbol{g(z^{l+1}}$. The resulting vector $\boldsymbol{\frac{∂C}{∂z^{l}}}$ contains all errors for layer $l$  allowing to compute derivatives of $C$ regarding the parameters of layer $l$ with the equations above.
 
 ### Backpropagation in convolutional layers
 
 ![conv_comp_graph.png]({{site.baseurl}}/img/conv_comp_graph.png)
-*Figure 17. Computational graph of a convolutional layer*
+*Figure 18. Computational graph of a convolutional layer*
 
-Just as fully-connected layers, convolutional layers can also be visualised in computational graph format. Thereby, two specific characteristics are revealed. At first the graph is sparse, meaning that the the neurons are not fully-connected. Secondly, weights are shared between neurons (*Fig 17*: colour-coded connections).
+Just as fully-connected layers, convolutional layers can also be visualised in computational graph format. Thereby, two specific characteristics are revealed. At first the graph is sparse, meaning that the the neurons are not fully-connected. Secondly, weights are shared between neurons (*Fig 18*: colour-coded connections).
 
 ![conv_backprop_wei.png]({{site.baseurl}}/img/conv_backprop_wei.png)
-*Figure 18. Computing *$$\frac{∂C}{∂w_{ij}^{l}}* in a convolutional layer*
+*Figure 19. Computing *$$\frac{∂C}{∂w_{ij}^{l}}* in a convolutional layer*
 
-To get the derivative of $C$ with respect to an arbitrary shared weight in a convolutional layer $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$ is computed for every pair of neurons connected by a shared weight. Subsequently the derivatives are summed. To compute $$$$\frac{∂C}{∂w_{ij}^{l}}$$ with regard to every weight of the convolutional layer, the steps can be represented as a convolution operation (Figure 18).
+To get the derivative of $C$ with respect to an arbitrary shared weight in a convolutional layer $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$ is computed for every pair of neurons connected by a shared weight. Subsequently the derivatives are summed. To compute $$\frac{∂C}{∂w_{ij}^{l}}$$ with regard to every weight of the convolutional layer, the steps can be represented as a convolution operation (Figure 19).
 
 ![conv_backprop_err.png]({{site.baseurl}}/img/conv_backprop_err2.png)
-*Figure 19. Computing *$$\frac{∂C}{∂z_{i}^{l-1}}* in a convolutional layer*
+*Figure 20. Computing *$$\frac{∂C}{∂z_{i}^{l-1}}* in a convolutional layer*
 
-Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time the errors 
+Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 comes to use again. In other words 
