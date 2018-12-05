@@ -41,7 +41,7 @@ The derivative regarding a bias is simply the error of the same neuron.
 Of course the derivatives for any parameter to be learned are computed. After the computations, the derivatives are utilisied by gradient descent to optimise the weights as discussed in part [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/).
 
 To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. the vector containing all errors of layer $l$, is computed via: 
-$$\frac{∂C}{∂z^{l}}=(\boldsymbol{W^{l+1 T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
+$$\boldsymbol{\frac{∂C}{∂z^{l}}=(W^{l+1 T})\frac{∂C}{∂z^{l+1}})g'(z^{l})}$$
 
 ![backprop_detailed2.png]({{site.baseurl}}/img/backprop_detailed2.png)
 *Figure 17. Moving the error backwards through the network*
