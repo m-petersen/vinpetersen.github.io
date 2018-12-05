@@ -62,6 +62,7 @@ Just as fully-connected layers, convolutional layers can also be visualised in c
 To get the derivative of $C$ with respect to an arbitrary shared weight in a convolutional layer $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$ is computed for every pair of neurons connected by a shared weight. Subsequently the derivatives are summed. To compute $$\frac{∂C}{∂w_{ij}^{l}}$$ with regard to every weight of the convolutional layer, the steps can be represented as a convolution operation (*Figure 19*).
 
 ![conv_backprop_err.png]({{site.baseurl}}/img/conv_backprop_err2.png)
+
 *Figure 20. Computing $$\frac{∂C}{∂z_{i}^{l-1}}$$ in a convolutional layer*
 
 Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. If an activation function comes into action in a convolutional layer, the errors are of course also moved backwards through it.
