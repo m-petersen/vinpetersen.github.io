@@ -66,8 +66,8 @@ To get the derivative of $C$ with respect to an arbitrary shared weight in a con
 
 Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. If an activation function comes into action in a convolutional layer, the errors are of course also moved backwards through it.
 
-Thus, every weight of a filter is optimised to minimise the prediction measured by $C$ which results in better detection of lower and higher level features respectively.
+Thus, every weight of a filter is optimised to minimise $C$ which results in better fitting to lower or higher level features of the training images.
 
-This concludes the my series about the inner workings of a convolutional neural network. In my opinion, these incredibly potent algorithms are far more intelligible than most people think and I hope after this intense reading I could show that in a convincing manner.
+This concludes the my series about the inner workings of a convolutional neural network. In my opinion, these incredibly potent algorithms are far more intelligible than most people think and I hope after this intense reading I could demonstrate that in a convincing manner.
 
 
