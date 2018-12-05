@@ -46,6 +46,7 @@ To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. 
 $$\frac{∂C}{∂z^{l}}=(\boldsymbol{(∂w_{i,j}^{l+1})^{T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
 
 ![backprop_detailed2.png]({{site.baseurl}}/img/backprop_detailed2.png)
+*Figure 16. Moving the error backwards through the network*
 
 In the equation, the backward movement is retraced. From the initial $\frac{∂C}{∂z_{i}^{l+1}}$ a backward step is taken by mutliplying (\boldsymbol{(∂w_{,j}^{l+1}}) to get $\frac{∂C}{∂a_{j}^{l+1}}$ (*Figure 16*)
 
