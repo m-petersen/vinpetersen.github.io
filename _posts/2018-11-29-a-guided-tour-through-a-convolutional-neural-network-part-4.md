@@ -29,10 +29,6 @@ This whole principle of chaining the derivatives together is called chain rule a
 
 The computations result in the following equations for weights and biases.
 
-$$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$
-
-
-
 ![weight_dev.png]({{site.baseurl}}/img/weight_dev.png)
 *Figure 16: Computation of cross-entropy loss with respect to an arbitrary weight*
 
