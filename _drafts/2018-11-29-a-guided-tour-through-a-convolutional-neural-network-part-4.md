@@ -64,4 +64,8 @@ To get the derivative of $C$ with respect to an arbitrary shared weight in a con
 ![conv_backprop_err.png]({{site.baseurl}}/img/conv_backprop_err2.png)
 *Figure 20. Computing *$$\frac{∂C}{∂z_{i}^{l-1}}* in a convolutional layer*
 
-Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 comes to use again. In other words 
+Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. In other words. If an activation function comes into action during in a convolution layer, the errors are of course also moved backwards through them.
+
+This concludes the my series about the inner workings of a convolutional neural network. In my opinion, these incredibly potent algorithms are far more intelligible than most people think and I hope after this intense reading I could show that in a convincing manner.
+
+
