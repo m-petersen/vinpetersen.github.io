@@ -33,8 +33,7 @@ $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$
 ![weight_dev.png]({{site.baseurl}}/img/weight_dev.png)
 *Figure 16: Computation of cross-entropy loss with respect to an arbitrary weight*
 
-
-To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by $$\frac{∂C}{∂z_{i}}$$, the derivative of C with respect to the $$z$$ the weight is leading to, (Figure 16). $$\frac{∂C}{∂z_{i}}$$ is also called the error of a neuron (*Fig. 16*).
+To compute the derivative of $$C$$ with respect to a weight, the activation of the neuron the weight is coming from is multiplied by $$\frac{∂C}{∂z_{i}}$$, i.e. the derivative of C with respect to the $$z$$ the weight is leading to, (Figure 16). $$\frac{∂C}{∂z_{i}}$$ is also called the error of a neuron (*Fig. 16*).
 
 $$\frac{∂C}{∂b_{i}^{l}}=\frac{∂C}{∂z_{i}^{l}}$$
 
