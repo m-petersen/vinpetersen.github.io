@@ -1,8 +1,9 @@
 ---
 layout: post
-published: false
+published: true
 title: A Guided Tour Through a Convolutional Neural Network - Part 4
 subtitle: The Maths Behind Backpropagation
+date: '2018-12-05'
 ---
 This post is part of a series about the inner workings of convolutional neural networks. In order to be best prepared for the following topics, especially by knowing the denotation and how convolution operations work, I recommend to deal with parts [1](https://vinpetersen.github.io/2018-11-23-a-guided-tour-through-a-convolutional-neural-network-part-1/), [2](https://vinpetersen.github.io/2018-11-25-a-guided-tour-through-a-convolutional-neural-network-part-2/) and [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/) before continuing.
 
