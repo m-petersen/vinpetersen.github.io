@@ -42,7 +42,7 @@ The derivative regarding a bias is simply the error of the same neuron.
 Of course the derivatives for any parameter to be learned are computed. After the computations, the derivatives are utilisied by gradient descent to optimise the weights as discussed in part [3](https://vinpetersen.github.io/2019-11-29-a-guided-tour-through-a-convolutional-neural-network-part-3/).
 
 To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. the vector containing all errors of layer $l$, is computed via: 
-$$\frac{∂C}{∂z^{l}}=(\boldsymbol{(∂w_{i,j}^{l+1})^{T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
+$$\frac{∂C}{∂z^{l}}=(\boldsymbol{W^{l+1 T}})\frac{∂C}{∂z^{l+1}})g'(z^{l})$$
 
 ![backprop_detailed2.png]({{site.baseurl}}/img/backprop_detailed2.png)
 *Figure 17. Moving the error backwards through the network*
@@ -64,7 +64,7 @@ To get the derivative of $C$ with respect to an arbitrary shared weight in a con
 ![conv_backprop_err.png]({{site.baseurl}}/img/conv_backprop_err2.png)
 *Figure 20. Computing *$$\frac{∂C}{∂z_{i}^{l-1}}* in a convolutional layer*
 
-Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. In other words. If an activation function comes into action during in a convolution layer, the errors are of course also moved backwards through them.
+Furthermore, moving backwards through the network, i.e. computing $$\frac{∂C}{∂z_{i}^{l-1}}$$, is also achieved by applying a convolution operation. This time a convolution operation utilising the inverted filters is applied to the errors of layer $l+1$. Thereby, the pattern described in Fig. 17 is reproduced. In other words. If an activation function comes into action in a convolution layer, the errors are of course also moved backwards through them.
 
 This concludes the my series about the inner workings of a convolutional neural network. In my opinion, these incredibly potent algorithms are far more intelligible than most people think and I hope after this intense reading I could show that in a convincing manner.
 
