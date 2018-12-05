@@ -31,6 +31,8 @@ The computations result in the following equations for weights and biases.
 
 $$\frac{∂C}{∂w_{ij}^{l}}=a_{j}^{l-1}\frac{∂C}{∂z_{i}^{l}}$$
 
+
+
 ![weight_dev.png]({{site.baseurl}}/img/weight_dev.png)
 *Figure 16: Computation of cross-entropy loss with respect to an arbitrary weight*
 
@@ -77,6 +79,3 @@ If you have questions or feedback don't hesitate to contact me on Twitter [@vinp
 * [Neural Networks and Deep Learning](http://neuralnetworksanddeeplearning.com/chap2.html) by Michael Nielsen
 * [Neural Networks and Deep Learning](https://www.coursera.org/learn/neural-networks-deep-learning?specialization=deep-learning) by Andrew Ng and deeplearning.ai
 * [Mathematics for Machine Learning: Multivariate Calculus](https://www.coursera.org/learn/multivariate-calculus-machine-learning) by Samuel J. Cooper and colleagues is an exceptionally novice-friendly and well-designed course which I can especially recommend to those who want to learn more about the basics of maths mentioned here.
-
-
-
