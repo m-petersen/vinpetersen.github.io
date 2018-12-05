@@ -43,6 +43,7 @@ Of course the derivatives for any parameter to be learned are computed. After th
 To move furtherly backwards through the network $$\frac{∂C}{∂z^{l}}$$, i.e. the vector containing all errors of layer $l$, is computed via: 
 $$\boldsymbol{\frac{∂C}{∂z^{l}}=(W^{l+1 T})\frac{∂C}{∂z^{l+1}})g'(z^{l})}$$
 
+
 ![backprop_detailed2.png]({{site.baseurl}}/img/backprop_detailed2.png)
 *Figure 17. Moving the error backwards through the network*
 
